@@ -1,0 +1,52 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .flex {
+        flex: 1 1 auto !important;
+        -ms-flex: 1 1 auto !important;
+    }
+
+    .input-credit-card::-ms-clear {
+        display: none;
+    }
+
+    .uk-button {
+        &-primary {
+            &-outline {
+                span {
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+
+    .uk-card {
+        &-type-add-small {
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+    .component-credit-card {
+        .container-credit-card {
+            justify-content: start;
+            -ms-flex-pack: start;
+        }
+    }
+    .cvv-help-info {
+        img {
+            max-width: 120px;
+        }
+    }
+
+    .form-privacy {
+        .uk-form-input {
+            font-size: 13px;
+            .uk-radio {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large-max) {
+
+}

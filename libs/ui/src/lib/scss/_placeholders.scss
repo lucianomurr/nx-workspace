@@ -1,0 +1,56 @@
+%immaginiDefault {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+
+%buttonDefault {
+  display: inline-block;
+  text: {
+    align: center;
+    decoration: none;
+  }
+  font: {
+    size: 18px;
+    weight: $bold-font-weight;
+  }
+}
+
+%iconDefault {
+  @extend %immaginiDefault;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  width: 24px;
+  height: 24px;
+}
+
+%labelDefault {
+  @extend %buttonDefault;
+  font: {
+    size: 14px;
+    style: $normal-italic-font-weight;
+  }
+}
+
+%linkDefault {
+  text-decoration: underline;
+  color: $soft-blue;
+}
+
+// underline style
+%underlineStyle {
+  font-weight: $bold-font-weight;
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: '';
+    position: absolute;
+    background: url('/assets/img/brush-stroke.svg') no-repeat;
+    width: 55px;
+    height: 13px;
+    left: -5px;
+    right: 0;
+    bottom: -11px;
+  }
+}

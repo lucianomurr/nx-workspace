@@ -1,0 +1,60 @@
+@mixin line-clamp($line, $orient) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: $orient;
+}
+
+// @mixin bg-image-gradient-horizontal($colour-left,$perc-left, $colour-right, $perc-right) {
+//     background-image: -moz-linear-gradient(left, $colour-left $perc-left, $colour-right $perc-right );
+//     background-image: -webkit-linear-gradient(left, $colour-left $perc-left , $colour-right $perc-right );
+//     background-image: linear-gradient(to right, $colour-left $perc-left , $colour-right  $perc-right );
+//     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$colour-left, endColorstr=$colour-right, GradientType=1);
+// }
+
+@mixin btnNoHover($className, $bgColor, $fontColor: $white) {
+  #($className) {
+    &:hover,
+    &:focus {
+      background-color: $bgColor;
+      color: $fontColor;
+    }
+  }
+}
+
+@mixin scrollbar() {
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $background;
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $light-grey-blue-20;
+  }
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+@mixin bordered($width, $color) {
+  border: $width solid $color;
+}
+
+@mixin rounded($property) {
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  border-radius: $property;
+}
+
+@mixin shadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow: $property;
+  box-shadow: $property;
+}

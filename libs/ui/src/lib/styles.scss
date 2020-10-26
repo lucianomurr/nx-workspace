@@ -1,0 +1,15 @@
+@import 'scss/fonts';
+// Overwritten variables.
+@import 'scss/variables-theme';
+
+// Mixins
+@import 'scss/mixins';
+
+//Placeholders
+@import 'scss/placeholders';
+
+//Base
+@import 'scss/base';
+
+//ONLY IE
+@import 'scss/ie';
