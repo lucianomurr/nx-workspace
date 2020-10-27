@@ -1,6 +1,7 @@
 html,
 body {
   font-family: $global-font-family;
+  background-image: url('../assets/img/pluto.gif');
 }
 h1,
 h2,
@@ -130,7 +131,11 @@ input[type='number'] {
       }
     }
     &-secondary {
-      background-image: linear-gradient(to right, $mid-green 3%, $lighter-green 98%);
+      background-image: linear-gradient(
+        to right,
+        $mid-green 3%,
+        $lighter-green 98%
+      );
     }
     &:hover,
     &:focus,
@@ -383,7 +388,8 @@ input[type='number'] {
       &-cc {
         &.error {
           .form-input {
-            background: url('/assets/img/icon-exclamation-error.svg') no-repeat 98% center;
+            background: url('/assets/img/icon-exclamation-error.svg') no-repeat
+              98% center;
           }
           img {
             display: none;

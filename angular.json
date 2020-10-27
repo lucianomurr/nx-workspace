@@ -15,7 +15,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "store/",
+            "baseHref": "/store/",
             "outputPath": "dist/apps/store",
             "index": "apps/store/src/index.html",
             "main": "apps/store/src/main.ts",
