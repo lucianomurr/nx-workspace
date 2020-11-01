@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: recho "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+    - run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
     - run: nx affected:build --base=origin/master --head=${GITHUB_REF#refs/heads/}s 
     - run: npm run affected:build 
     - run: npm run affected:test
