@@ -25,7 +25,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: echo "current branch:" ${BRANCH_NAME}
     - run: nx affected:build --base=origin/master --head=${BRANCH_NAME} 
     - run: npm run affected:build 
     - run: npm run affected:test
