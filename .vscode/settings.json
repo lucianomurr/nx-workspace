@@ -1,5 +1,5 @@
 {
-  "terminal.integrated.fontFamily": "Cousine for Powerline",
+  "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.shell.osx": "/bin/zsh",
 
   // @Drakal added
